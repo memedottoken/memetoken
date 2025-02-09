@@ -1,0 +1,80 @@
+{
+	"fields": [
+		{
+			"name": "logo",
+			"type": "file|nullable",
+			"rules": "required|string"
+		},
+		{
+			"name": "name",
+			"type": "string|nullable",
+			"rules": "required|string"
+		},
+		{
+			"name": "twitter",
+			"type": "string|nullable",
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "youtube",
+			"type": "string|nullable",
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "telegram_group",
+			"type": "string|nullable",
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "telegram_channel",
+			"type": "string|nullable",
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "discord",
+			"type": "string|nullable",
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "documentation",
+			"type": "string|nullable",
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "rpc",
+			"type": "select|default:ankr",
+			"options": {
+				"ankr": "ankr",
+				"infura": "infura",
+				"blast": "blast"
+			},
+			"rules": "nullable|string|url"
+		},
+		{
+			"name": "ankr",
+			"type": "string|nullable",
+			"rules": "nullable|string"
+		},
+		{
+			"name": "infura",
+			"type": "string|nullable",
+			"rules": "nullable|string"
+		},
+		{
+			"name": "blast",
+			"type": "string|nullable",
+			"rules": "nullable|string"
+		},
+		{
+			"name": "chat",
+			"type": "boolean|default:true",
+			"rules": "nullable|boolean"
+		},
+		{
+			"name": "featured",
+			"type": "boolean|default:false",
+			"rules": "nullable|boolean"
+		}
+	],
+	"relationships": []
+}
