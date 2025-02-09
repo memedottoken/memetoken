@@ -1,1 +1,0 @@
-import{o as t,d as a,F as s,i as o,t as l,U as n}from"./vue-i18n-locales.generated-DazkPcQT.js";const c={class:"block font-medium text-sm text-gray-700 dark:text-gray-300"},u={__name:"FormLabel",props:{value:String},setup(e){return(r,m)=>(t(),a("label",c,[e.value?(t(),a(s,{key:0},[o(l(e.value),1)],64)):n(r.$slots,"default",{key:1})]))}};export{u as _};
