@@ -1,0 +1,1 @@
+import{u as t}from"./useConfig-BkRNL90S.js";import{r as i,ae as r,R as c}from"./vue-i18n-locales.generated-DazkPcQT.js";function u(n){return n.state.chainId}function h(n,o){const{onChange:a}=o;return n.subscribe(e=>e.chainId,a)}function C(n={}){const o=t(n),a=i(u(o)),e=h(o,{onChange(s){a.value=s}});return c(()=>e()),r(a)}export{C as u};
