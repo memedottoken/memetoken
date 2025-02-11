@@ -1,3 +1,6 @@
+# dynamically created folders 
+vendor
+
 # archives
 *.zip
 *.gz
