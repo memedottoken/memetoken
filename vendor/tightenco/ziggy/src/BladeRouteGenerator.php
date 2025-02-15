@@ -23,7 +23,9 @@ class BladeRouteGenerator
 
         $output = config('ziggy.output.script', Script::class);
 
-        $routeFunction = config('ziggy.skip-route-function') ? '' : file_get_contents(__DIR__ . '/../dist/route.umd.js');
+        $dir = dirname(__DIR__, 1);
+
+        $routeFunction = config('ziggy.skip-route-function') ? '' : file_get_contents($dir . '/dist/route.umd.js');
 
         return (string) new $output($ziggy, $routeFunction, $nonce);
     }
