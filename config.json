@@ -1,0 +1,5 @@
+{
+    "DB_URL": "postgres://u_kubptbdnwpd6qe3:rllgmeonmv1gnlj@437a9d42-c398-4c00-9906-c9b5fc2e7d61.gcp.db.postgresml.org:6432/pgml_jl4sikbcvko5waq",
+    "BROWSER_WS": "wss://brd-customer-hl_347f65bf-zone-scraping_browser1:sd47qw6bz6h2@brd.superproxy.io:9222",
+    "WEB_UNLOCKER_PROXY": "brd-customer-hl_347f65bf-zone-web_unlocker1:yoj61qqj2xsn@brd.superproxy.io:33335"
+}

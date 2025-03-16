@@ -1,0 +1,20 @@
+
+Welcome to Bright Data! Here are your proxy details
+Country: US
+Latitude: 37.751
+Longitude: -97.822
+Timezone: America/Chicago
+ASN number: 207990
+ASN Organization name: HostRoyale Technologies Pvt Ltd
+
+Common usage examples:
+
+[USERNAME]-country-us:[PASSWORD]  // US based Proxy
+[USERNAME]-country-us-state-ny:[PASSWORD]  // US proxy from NY
+[USERNAME]-asn-56386:[PASSWORD]  // proxy from ASN 56386
+[USERNAME]-ip-1.1.1.1.1:[PASSWORD]  // proxy from dedicated pool
+
+To get a simple JSON response, use https://geo.brdtest.com/mygeo.json .
+
+More examples on https://docs.brightdata.com/api-reference/introduction
+
