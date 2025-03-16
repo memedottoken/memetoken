@@ -1,1 +1,0 @@
-const i=t=>t.charAt(0).toUpperCase()+t.slice(1),n=t=>{let e=parseInt(t)??0;if(!e)return 0;if(e<1e3)return e;const s=["","K","M","B","T"];let r=0;for(;e>=1e3;)e/=1e3,r++;return e=e.toString().length>2?e.toPrecision(3):e.toPrecision(),e+=s[r],e};export{i as a,n as u};
