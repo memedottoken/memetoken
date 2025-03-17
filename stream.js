@@ -1,5 +1,5 @@
 let fetches = require('./fetches'),
-    tokens  = require('./memecoins');
+    tokens  = { data: require('./memecoins') };
     /**coin data to use as filler */
 
 const stream = socket=>{

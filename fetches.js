@@ -27,7 +27,9 @@ let args = {
     king: cb=>wrap(fetch('https://frontend-api-v3.pump.fun/coins/king-of-the-hill?includeNsfw=false').then(res=>res.json()), cb),
     coin: mint=>fetch(`https://frontend-api.pump.fun/coins/${mint||"CPBQqugWWCcyehezHf4uSJtET2kmYNqPuhyb57H5pump"}`).then(res=>res.json()),
     sift: (opts, cb)=>(opts||={}, wrap(fetch(`https://frontend-api-v3.pump.fun/coins/for-you?offset=${opts.offset||0}&limit=${opts.limit||4}&includeNsfw=${opts.nsfw||"false"}`, args).then(res=>res.json()), cb)),
-    latest: cb=>wrap(fetch("https://frontend-api-v3.pump.fun/coins/latest", args).then(res=>res.json()), cb)
+    latest: cb=>wrap(fetch("https://frontend-api-v3.pump.fun/coins/latest", args).then(res=>res.json()), cb),
+    runners: cb=>wrap(fetch('https://pump.fun/api/runners', args).then(res=>res.json()), cb),
+    search: cb=>wrap(fetch("https://frontend-api-v3.pump.fun/coins/search_ranked?offset=0&limit=48&sort=market_cap&includeNsfw=false&order=DESC&searchTerm=meowdy&type=hybrid", args).then(res=>res.json()), cb)
 };
 
 module.exports = fetches

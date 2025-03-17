@@ -11,8 +11,8 @@ createRoot(document.getElementById('connect')).render(
   </StrictMode>,
 )
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <TradeCtx/>
-  </StrictMode>,
-)
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <TradeCtx/>
+//   </StrictMode>,
+// )

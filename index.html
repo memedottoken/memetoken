@@ -6,14 +6,14 @@
 	<script src="js/utils.js"></script>
   <script src="js/ripples.js"></script>
   <script src="../js/rellax.min.js"></script>
-  <script src="./public/buffer-bundle.js"></script>
+  <!-- <script src="./public/buffer-bundle.js"></script> -->
   <!-- for vite -->
-  <!-- <script src="./public/buffer-bundle.jsx"></script> -->
+  <script src="buffer-bundle.jsx"></script>
   <script>
     Buffer = Buffer.Buffer
   </script>
   <!-- for solana wallet -->
-  <!-- <script type="module" src="src/main.jsx"></script> -->
+  <script type="module" src="src/main.jsx"></script>
   <script src="js/index.iife.min.js"></script>
 <style>
 .\[\&\>\*\]\:text-current>* {
@@ -103,15 +103,15 @@
     <nav class="z-10 sm:text-left text-center top-0 left-0 right-0 absolute text-xs" style="--tw-bg-opacity:calc(var(--bg-opacity-pad) + 0.1);"><section class="items-center mx-10 justify-between flex">
       <button class="rounded-lg px-4 p-2 bg-white text-green-300 m-2 font-bookweb text-xl" onclick="Abbr.to(this,['pN', 'nES','cL']).add('show')" style="--tw-bg-opacity:0.1">Memetoken</button>
   
-      <button class="relative bg-transparent rounded-3xl duration-500 ease-out text-yellow-700 p-0" onclick="connectWallet()">
+      <!-- <button class="relative bg-transparent rounded-3xl duration-500 ease-out text-yellow-700 p-0" onclick="connectWallet()">
         <div class="mt-0.5 -ml-px absolute h-1/2 w-1/5 rounded-tl-full border-t border-l border-current top-0 left-0"></div>
         <div class="mt-2 rounded-3xl overflow-hidden absolute inset-0 text-yellow-600 m-1 mb-2">
         <div style="transform-origin: bottom; animation-duration: 3s; transform-origin: top right" class="w-1/3 top-1/2 origin-center bg-gradient-to-r from-transparent via-current to-tansparent absolute animate-spin p-10"></div></div>
         <div class="absolute h-1/2 w-1/4 rounded-br-full bottom-0 right-0 border-b border-r border-current mb-0.5 -mr-0.5"></div>
         <div class="ripple mt-2 m-1 relative inline-block p-4 px-5 rounded-inherit sm:w-36 truncate font-semibold backdrop-filter backdrop-blur-lg text-yellow-700">
         <i class="fa fa-toggle-on text-3xl sm:text-lg inline-block align-middle mr-2 pointer-events-none"></i><span class="ml-2 tooltip no-hover no-focus no-focus-within slide sm:show sm:relative absolute">UI flags</span></div>
-      </button>
-      <!-- <div id="connect"></div> -->
+      </button> -->
+      <div id="connect"></div>
 
 </section>
 
@@ -131,46 +131,46 @@
         <aside class="-top-28 absolute left-0 right-0 text-center hidden"><div class="backdrop-filter backdrop-blur absolute inset-0"></div>
     <div class="rounded-b-full inline-block p-20" style="
         background: radial-gradient(circle at center, rgb(31 71 59), transparent 100px);"></div></aside>
-    <section class="overflow-hidden md:pt-20 md:pb-10 md:mx-auto sm:mx-20 relative h-full md:px-6 md:p-14 justify-center m-auto lg:w-4/5 flex flex-col xl:w-2/3" style="/* width:76%; */" onclick="let t=event.target, sct=qsa('section.inset-14'), elms=[e=>relation(e, t)[0]||t===e, e=>e.style.zIndex==5].map(fn=>sct.find(fn)); if(innerWidth>=768||elms[0]===elms[1]||!elms[0]) return; let cls=[], top=elms.map((elm,i)=>[].find.call(cls[i]=Abbr.to(elm,'cL'), e=>(e=e.split('-'))[0]=='top'&&+e[1]!==24)), mxs=cls.map(cl=>[].find.call(cl, e=>((e=e.split('-'))[0]||=e[1])==='mx')); cls.forEach((cl,i)=>[mxs, top].forEach(a=>cl.replace(a[+!!i], a[+!i]))), elms[1].style.zIndex=elms[0].style.zIndex, elms[0].style.zIndex=5">
+    <section class="overflow-hidden md:pt-20 md:pb-10 md:mx-auto sm:mx-20 relative h-full md:px-6 md:p-14 justify-center m-auto lg:w-4/5 flex flex-col xl:w-2/3" style="/* width:76%; */" onclick="let t=event.target, sct=qsa('section.inset-14'), elms=[e=>relation(e, t)[0]||t===e, e=>e.style.zIndex==5].map(fn=>sct.find(fn)); if(innerWidth>=768||elms[0]===elms[1]||!elms[0]) return; let cls=[], top=elms.map((elm,i)=>[].find.call(cls[i]=Abbr.to(elm,'cL'), e=>(e=e.split('-'))[0]=='top'&&+e[1]!==24)), mxs=cls.map(cl=>[].find.call(cl, e=>((e=e.split('-'))[0]||=e[1])==='mx')); cls.forEach((cl,i)=>[mxs, top].forEach(a=>cl.replace(a[+!!i], a[+!i]))), elms[1].style.zIndex=elms[0].style.zIndex, elms[0].style.zIndex=5" id="wrap">
         <section class="h-2/3 flex">
         <section class="__tokens flex flex-col md:transform-none md:duration-none p-4 md:mx-0 rounded-t-3xl md:inset-0 duration-300 ease-out transform hover:-translate-y-1 -mx-10 inset-14 absolute md:mt-4 md:mx-2 rounded-2xl md:rounded-b-none bg-cover bottom-10 top-24 top-80 md:w-2/5 md:relative" style="background-image: url(&quot;../assets.jpg&quot;); z-index: 5;">
     <h3 class="mt-1.5 ml-4 w-3/4 bg-gradient-to-r from-green-100 to-transparent text-green-100 text-2xl opacity-40 font-semibold" style="background-clip:text; -webkit-text-fill-color:transparent">Memetokens</h3>
-<button class="shadow rounded-lg rounded-tr-3xl bg-green-300 ripple p-7 right-0 top-0 absolute text-lg fa-compress text-green-400 fa fa-expand" style="--tw-bg-opacity: 0.1;" onclick="let cL=Abbr.to(this,['pN','cL']); Abbr.to(this,'cL').toggle('fa-expand'), /*toggle classNames with 'top' aside top-24*/['md:top-24', this.cls||(this.cls=[].find.call(cL, e=>(e=e.split('-'))[0]=='top'&&+e[1]!==24)), 'md:w-2/5', 'md:relative'].forEach(cls=>cls&&cL.toggle(cls)), ['md:code-no-truncate', 'md:inline-flex'].forEach(cls=>Abbr.to(this,['nES','cL']).toggle(cls))"></button>
+<button class="shadow rounded-lg rounded-tr-3xl bg-green-300 ripple p-7 right-0 top-0 absolute text-lg fa-compress text-green-400 fa fa-expand" style="--tw-bg-opacity: 0.1;" onclick="let t=event.target, cL=Abbr.to(t,['pN','cL']); Abbr.to(t,'cL').toggle('fa-expand'), /*toggle classNames with 'top' aside top-24*/['md:top-24', t.cls||(t.cls=[].find.call(cL, e=>(e=e.split('-'))[0]=='top'&&+e[1]!==24)), 'md:w-2/5', 'md:relative'].forEach(cls=>cls&&cL.toggle(cls)), ['md:code-no-truncate', 'md:inline-flex'].forEach(cls=>Abbr.to(t,['nES','cL']).toggle(cls))"></button>
 
 <ul class="space-y-2 cursor-pointer flex-1 items-center overflow-scroll [&>*]:relative rounded-lg [&>*]:rounded-inherit flex-wrap [&>*]:p-2 mt-6" onclick="let t=event.target, ch=this.children, li=[].find.call(ch, e=>relation(e,t)[0]||t===e); console.log('::LI::', li); if(li) Abbr.to(this,['nES','cL']).add('show')">
   <li class="flex">
     <aside class="tooltip rounded-r-lg bg-gradient-to-tl from-green-900 via-transparent to-transparent inset-0 absolute" style="pointer-events:none;z-index:auto"></aside>
 <img class="mr-2 rounded-md h-20 w-20" src="foo.png"><div class="[&>*]:align-top text-sm w-2/3 flex-1 text-gray-400"><div class="flex-wrap items-center flex">name&nbsp;•&nbsp;<code class="mr-3 text-gray-300 truncate">Catamin Eyes</code>
-<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE is not an example of speech synthesis</code></div></div>
-</li><li class="flex">
-    <aside class="tooltip rounded-r-lg bg-gradient-to-tl from-green-900 via-transparent to-transparent inset-0 absolute" style="pointer-events:none;z-index:auto"></aside>
-<img class="mr-2 rounded-md h-20 w-20" src="foo.png"><div class="[&>*]:align-top text-sm w-2/3 flex-1 text-gray-400"><div class="flex-wrap items-center flex">name&nbsp;•&nbsp;<code class="mr-3 text-gray-300 truncate">Catamin Eyes</code>
-<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE metadata</code></div></div>
-</li><li class="flex">
-    <aside class="tooltip rounded-r-lg bg-gradient-to-tl from-green-900 via-transparent to-transparent inset-0 absolute" style="pointer-events:none;z-index:auto"></aside>
-<img class="mr-2 rounded-md h-20 w-20" src="foo.png"><div class="[&>*]:align-top text-sm w-2/3 flex-1 text-gray-400"><div class="flex-wrap items-center flex">name&nbsp;•&nbsp;<code class="mr-3 text-gray-300 truncate">Catamin Eyes</code>
-<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE metadata</code></div></div>
+<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="mb-1 items-center flex">description&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE is not an example of speech synthesis</code></div><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE</code></div></div>
 </li>
   <li class="flex">
     <aside class="tooltip rounded-r-lg bg-gradient-to-tl from-green-900 via-transparent to-transparent inset-0 absolute" style="pointer-events:none;z-index:auto"></aside>
 <img class="mr-2 rounded-md h-20 w-20" src="foo.png"><div class="[&>*]:align-top text-sm w-2/3 flex-1 text-gray-400"><div class="flex-wrap items-center flex">name&nbsp;•&nbsp;<code class="mr-3 text-gray-300 truncate">Catamin Eyes</code>
-<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE metadata</code></div></div>
+<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="mb-1 items-center flex">description&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE is not an example of speech synthesis</code></div><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE</code></div></div>
+</li><li class="flex">
+    <aside class="tooltip rounded-r-lg bg-gradient-to-tl from-green-900 via-transparent to-transparent inset-0 absolute" style="pointer-events:none;z-index:auto"></aside>
+<img class="mr-2 rounded-md h-20 w-20" src="foo.png"><div class="[&>*]:align-top text-sm w-2/3 flex-1 text-gray-400"><div class="flex-wrap items-center flex">name&nbsp;•&nbsp;<code class="mr-3 text-gray-300 truncate">Catamin Eyes</code>
+<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="mb-1 items-center flex">description&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE is not an example of speech synthesis</code></div><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE</code></div></div>
+</li><li class="flex">
+    <aside class="tooltip rounded-r-lg bg-gradient-to-tl from-green-900 via-transparent to-transparent inset-0 absolute" style="pointer-events:none;z-index:auto"></aside>
+<img class="mr-2 rounded-md h-20 w-20" src="foo.png"><div class="[&>*]:align-top text-sm w-2/3 flex-1 text-gray-400"><div class="flex-wrap items-center flex">name&nbsp;•&nbsp;<code class="mr-3 text-gray-300 truncate">Catamin Eyes</code>
+<i class="fa fa-clock"></i>&nbsp;•&nbsp;<code class="p-0.5 mr-3">10h ago</code><i class="text-base fa fa-chart-line"></i>&nbsp;•&nbsp;<code class="p-0.5">$1.3K</code></div><hr class="my-0.5 text-green-700 bulge-right rounded border-0 p-px"><div class="mb-1 items-center flex">description&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE is not an example of speech synthesis</code></div><div class="items-center flex">symbol&nbsp;•&nbsp;<code class="text-gray-300 truncate">CATAMINEYE</code></div></div>
 </li></ul>
     <aside class="tooltip no-hover no-focus no-focus-within slide-y rounded-xl top-20 bg-cover bg-no-repeat absolute inset-0" style="background-image:url(test.png)">
     <aside class="rounded-inherit absolute bg-black inset-0 opacity-90"></aside><article class="p-2 pt-4 relative h-full flex justify-around">
-    <div class="duration-300 ease-out  sm:my-10 border-gray-700 border-l w-3 rounded-bl-3xl">
-    <button class="px-5 -mt-2.5 -m-px relative ripple rounded-t-xl border-b-0 whitespace-pre p-4 border text-current border-gray-700" onclick="Abbr.to(this, [{3:'pN'},'cL']).remove('show')"><i class="mr-2 fa fa-chevron-left"></i>back</button>
+    <div class="duration-300 ease-out  sm:my-2 border-gray-700 border-l w-3 rounded-bl-3xl">
+    <button class="px-5 -mt-2.5 -m-px relative ripple rounded-t-xl border-b-0 whitespace-pre p-4 border text-current border-gray-700 rounded-b-none bg-transparent" onclick="Abbr.to(this, [{3:'pN'},'cL']).remove('show')"><i class="mr-2 fa fa-chevron-left"></i>back</button>
 </div>
 <section class="sm:w-2/3 text-sm text-gray-400 justify-center flex-col flex text-center">
-<h3>Catamin Eyes • CATAMINEYE</h3><p>this is a long-ass description for the token</p>
+<h3>Catamin Eyes • CATAMINEYE</h3><p>placeholder token description</p>
     <section class="space-y-1.5 mt-4 [&>*]:relative text-gray-300">
 <div class="underline text-xs font-mono rounded-lg"><pre class="m-auto truncate" style="width:90%;">GSFj9vwTdKKhA9ZFZkZ7EFZYcpuT9WJRZtzezPkepump</pre><a class="items-center text-sm text-sm bg-near-black absolute tooltip to-top p-3 flex -mb-1" style="--arrow-size:5px;--delay:0.1s; text-decoration:none"><span>↗ <strong>mint</strong></span><img src="solscan.ico" class="ml-1 h-6"></a></div><div class="underline text-xs font-mono rounded-lg"><pre class="m-auto truncate" style="width:90%;">8KbpSFtwzkiSALQ318DiQPUaag6GB1oobz2UQ4YM4UFB</pre><a class="-mb-1 items-center text-sm text-sm bg-near-black absolute tooltip to-top p-3 flex" style="--arrow-size:5px;--delay:0.1s; text-decoration:none"><span>↗ <strong>creator</strong></span><img src="solscan.ico" class="ml-1 h-6"></a></div><div class="underline text-xs font-mono rounded-lg"><pre class="m-auto truncate" style="width:90%;">GSFj9vwTdKKhA9ZFZkZ7EFZYcpuT9WJRZtzezPkepump</pre><a class="items-center text-sm text-sm bg-near-black absolute tooltip to-bottom p-3 flex -mt-1" style="--arrow-size:5px;--delay:0.1s; text-decoration:none"><span> ↗ <strong>bonding curve</strong></span><img src="solscan.ico" class="ml-1 h-6"></a></div></section>
 
-<div class="text-white mt-3 text-center [&>*]:p-2 [&>*]:text-current"><button>view market chart</button><button>view token comments</button><button>trade token</button></div></section>
-<div class="duration-300 ease-out sm:my-10 border-gray-800 border-r w-3 rounded-r-3xl"></div></article>
+<div class="text-white mt-3 text-center [&>*]:p-2 [&>*]:text-current"><button class="bg-transparent text-white">view market chart</button><button class="bg-transparent text-white">view token comments</button><button class="bg-transparent text-white">trade token</button></div></section>
+<div class="duration-300 ease-out sm:my-2 border-gray-800 border-r w-3 rounded-r-3xl"></div></article>
 </aside></section><section class="flex-col flex ml-2 flex-1 w-auto">
         <section class="md:mb-2 flex">
-        <section class="md:duration-none md:shadow-lg md:transform-none md:mx-0 rounded-t-3xl md:inset-0 w-0.53 duration-300 ease-out transform hover:-translate-y-1 rounded-2xl top-40 -mx-px inset-14 absolute md:relative bottom-10" style="z-index: 2;">
+        <section class="md:duration-none md:shadow-lg md:transform-none md:mx-0 rounded-t-3xl md:inset-0 w-0.53 duration-300 ease-out transform hover:-translate-y-1 rounded-2xl top-36 -mx-px inset-14 absolute md:relative bottom-10" style="z-index: 2;">
         <img src="defi.jpg" class="md:opacity-100 sopacity-70 mw-300 md:relative absolute rounded-3xl w-full" style="border-radius: 2rem;">
 <section class="absolute inset-0 p-10 md:p-4">
     <h2 class="m-3 w-2/3 md:text-2xl text-3xl relative text-green-100">King of the Hill<div class="w-full m-0.5 left-0 top-0 absolute mix-blend-difference text-green-100" style="--tw-bg-opacity: 0.3">King of the Hill</div></h2><i class="md:text-base rounded-tr-3xl inline-block bg-green-900 text-2xl md:m-3 opacity-60 p-4 text-yellow-400 md:bg-transparent absolute right-0 top-0 fa fa-crown"></i>
@@ -181,11 +181,11 @@
     </section>
         <section class="md:duration-none md:transform-none bg-cover md:mx-0 md:-mb-5 md:inset-0 h-0.54 duration-300 ease-out transform hover:-translate-y-1 rounded-2xl -mx-3 top-52 inset-14 absolute md:relative md:h-1/2 bottom-10" style="background-image: url(&quot;/safe.png&quot;); z-index: 3;">
         
-<article id="root" class="h-full relative">
-    <header><h3 class="p-5 w-3/4 bg-gradient-to-r from-transparent to-green-100 text-green-300 text-2xl font-semibold" style="background-clip:text;-webkit-text-fill-color:transparent;--tw-gradient-from: #338a2c2e;">Market Chart</h3><button class="ripple rounded-tr-2xl text-green-400 rounded-lg top-0 absolute right-0 bg-green-300 text-2xl p-5 fa fa-expand-alt" style="--tw-bg-opacity:0.1"></button>
-</header><aside class="md:hidden absolute inset-0 flex items-center text-center">
-<p class="mx-10 text-sm"><i class="fa fa-exclamation-circle mr-1"></i>Select a <a class="underline">memetoken</a> and choose to view its market data in the resulting section
-</p></aside><main class="h-full"></main>
+<article class="h-full relative">
+    <aside class="md:hidden absolute inset-0 flex items-center text-center">
+<p class="mx-10 text-sm"><i class="fa fa-exclamation-circle mr-1"></i>Click on a token among<a class="mx-1 underline text-current" onclick="setTimeout(_=>qsa('.__tokens')[0].click(),1000/60)">memetokens</a>and "view market chart"
+</p></aside><header class="relative"><h3 class="p-5 w-3/4 bg-gradient-to-r from-transparent to-green-100 text-green-300 text-2xl font-semibold" style="background-clip:text;-webkit-text-fill-color:transparent;--tw-gradient-from: #338a2c2e;">Market Chart</h3><button class="ripple rounded-tr-2xl text-green-400 rounded-lg top-0 absolute right-0 bg-green-300 text-2xl p-5 fa fa-expand-alt" style="--tw-bg-opacity:0.1"></button>
+</header><main class="h-full"></main>
 </article>
 </section>
     </section>
@@ -195,7 +195,7 @@
         <section class="backdrop-filter backdrop-blur-md [&>*]:rounded-inherit h-full rounded-2xl">
         <aside class="md:opacity-100 opacity-30 bg-top md:bg-cover absolute inset-0" style="background-image:url(../what.jpg)">
         </aside>
-        <div id="root" class="h-full relative"></div>
+        <!-- <div id="root" class="h-full relative"></div> -->
     </section>
     </section>
     <section class="md:duration-none md:transform-none md:m-0 bg-cover md:inset-0 duration-300 ease-out transform hover:-translate-y-1 rounded-2xl top-20 mx-6 inset-14 absolute md:relative flex-1 bottom-10" style="background-image: url(&quot;/wow.jpg&quot;); z-index: 0;"></section>
@@ -205,6 +205,13 @@
     
     <script src="socket.io/socket.io.js"></script>
     <script>
+      /*function to return the time difference between now and a given date*/
+      let tDiff=(n, diff, sym)=>(
+        n = new Date(n),
+        /*is returned due to the parenthesis wrapping the function body*/
+        ['Day', 'Hours', 'Minutes', 'Seconds'].find((s, p)=>(diff=new Date()[p='get'+(sym=s)]() - n[p]())>0)
+        && diff+sym.charAt(0).toLowerCase()
+      );
       page = {
         asText: function(node, fn, txt='', _txt, cb, val) {
         (cb=(nodes, flag, bool)=>slice(nodes).forEach((ch, res)=>{
@@ -224,12 +231,18 @@
     }
       /*use heap as a global array of nodes that are modified and altered as an alternative to variables for the same purpose */
       let heap = [];
-      (socket = io.connect(location.host)).emit('mint', "::CLIENT::<Message>"),
-        w_Ev_dom((rellax)=>{
+      (socket = io.connect(location.host)).emit('mint', []),
+        w_Ev_dom((tLi, rellax, frag)=>{
+          tLi = qsa('.__tokens ul li'), frag=document.createDocumentFragment(),
           DOMLoaded = true,
           animations.addRippleAnimations(),
-          socket.on('mint', obj=>{
-
+          socket.on('mint', (obj, el)=>{
+            let { data } = obj;
+            data?.forEach(tkn=>{
+              /* actual market cap is market_cap * price of solana */
+              let { market_cap, name, symbol, created_timestamp } = tkn
+            }),
+            console.log('::OBJ::', obj)
           })
       })
     </script>
